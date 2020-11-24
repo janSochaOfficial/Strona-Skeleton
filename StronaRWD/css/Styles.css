@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+}
+html {
+    font-family: sans-serif;
+}
+.header{
+    text-align: center;
+    color: #fff;
+    width: 100%; 
+    height: 80px;
+   background-color: black;
+}
+.logo{
+    width: 100%;
+    height: 80px;
+    text-align: center;
+    padding: 10px;
+}
+/*----------------NAV----------------*/
+.nav-bar{
+    background-color: rgb(139, 109, 43);
+    color: cyan;
+    margin: 5px;
+    border-radius: 25px;
+}
+.nav-list{
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    flex-direction: row;
+    justify-items: center;
+
+}
+footer{
+    margin-top: 20%;
+    margin-bottom: 0;
+    height: fit-content;
+    padding: 10px;
+    background-color: rgb(184, 172, 139);
+}
+ul{
+    list-style: none;
+}
+.contact, .social{
+    padding: 15px;
+}
+/*----------------KONTAKT--------------------*/
+.dribbble {
+    margin: 5px;
+    width: 64px; height: 64px;
+    background: url('../images/css_sprites.png') -10px -10px;
+    float: left;
+}
+
+.dribbble:hover {
+    width: 64px; height: 64px;
+    background: url('../images/css_sprites.png') -94px -10px;
+}
+.facebook {
+    float: left;
+    margin: 5px;
+    width: 64px; height: 64px;
+    background: url('../images/download.png') -94px -10px;
+}
+
+.facebook:hover{
+    width: 64px; height: 64px;
+    background: url('../images/download.png') -10px -10px;
+}
+.twitter{
+    float: left;
+    margin: 5px;
+    width: 64px; height: 64px;
+    background: url('../images/twitter.png') -10px -10px;
+}
+.twitter:hover{
+    width: 64px; height: 64px;
+    background: url('../images/twitter.png') -94px -10px;
+}
+@media (min-width: 1000px) {
+    .nav-bar{
+      height: 100%;
+      width: 20%;
+      float: left;
+      margin: 0;
+      margin-top: 5px;
+      margin-right: 2px;
+      padding: 10px;
+      border-radius: 25px;
+    }
+    .nav-list{
+      flex-direction: column;
+    }
+    .portfolio{
+      width: 70%;
+      float: left;
+      margin-left: 5%;
+    } 
+    .container{
+        width: 100%;
+        height: fit-content;
+        height: 70%;
+    }
+    footer{
+        clear: both;
+    }
+}
+@media (max-width: 550px){
+    .nav-bar{
+        height: fit-content;
+        width: 100%;
+        border-radius: 0px;
+    }
+    .nav-list{
+        flex-direction: column;
+    }
+}
